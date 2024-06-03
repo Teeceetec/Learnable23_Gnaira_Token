@@ -41,16 +41,12 @@ endif
 
  
 
-m:
-	@forge script script/interactions.s.sol:MintLMSNft ${NETWORK_ARGS}
-
 deploy:
-	@forge script script/DeployLMS.s.sol: $(NETWORK_ARGS)
+	@forge script script/DeployGnaira.s.sol: $(NETWORK_ARGS)
 
 D:
 	@forge script script/interactions.s.sol:$(NETWORK_ARGS)
 
-W:
-	@forge script script/interactions.s.sol: $(NETWORK_ARGS)
+
 
 
